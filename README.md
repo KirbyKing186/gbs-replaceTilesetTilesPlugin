@@ -1,4 +1,4 @@
-# gbs-loadTilesetExPlugin
+# gbs-replaceTilesetTilesPlugin
  Load and replace tiles in the VRAM tileset using a tileset.
  
 This plugin adds the event to use the GBVM command VM_REPLACE_TILE.
