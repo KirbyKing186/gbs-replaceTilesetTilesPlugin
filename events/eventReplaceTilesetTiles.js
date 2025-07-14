@@ -27,7 +27,7 @@ export const fields = [
     },
   },
   {
-    key: `idx_start_tile`,
+    key: `tileIndex`,
     label: "Source Offset Tile Index",
     type: "value",
     width: "50%",
@@ -38,7 +38,7 @@ export const fields = [
   },
   {
     key: "tile_length",
-    label: "length",
+    label: "Length",
     description: "length",
     type: "number",
     width: "50%",
@@ -59,7 +59,7 @@ export const compile = (input, helpers) => {
   const tmp1 = _declareLocal("tmp_1", 1, true);
     
   variableSetToScriptValue(tmp0, input.idx_target_tile);
-  variableSetToScriptValue(tmp1, input.idx_start_tile);
+  variableSetToScriptValue(tmp1, input.tileIndex);
     
   _addComment("Replace tiles");
   
